@@ -16,15 +16,15 @@ if %AddressWidth%==64 (
 GOTO End
 
 :Download
-wget -w 3 https://github.com/ViroRepo/teamviewer-deploy/raw/master/Compiled/teamviewer.exe?raw=true --no-check-certificate --no-proxy
-wget -w 3 https://github.com/ViroRepo/eset-deploy/raw/master/compiled/eset3264.exe?raw=true --no-check-certificate --no-proxy
-
+wget -w 3 https://github.com/ViroRepo/ninite-silent/raw/master/Exe-Originals/ninite.exe --no-check-certificate --no-proxy
+wget -w 3 https://github.com/ViroRepo/teamviewer-deploy/raw/master/Compiled/teamviewer.exe --no-check-certificate --no-proxy
+wget -w 3 https://github.com/ViroRepo/eset-deploy/raw/master/compiled/eset3264.exe --no-check-certificate --no-proxy
 Goto Install
 
 :Install
-CLS
 teamviewer.exe
 eset3264.exe
+ninite.exe
 Goto EXIT
 
 :EXIT
